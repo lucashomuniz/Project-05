@@ -1,4 +1,4 @@
-# ✅ PROJECT-07
+# ✅ PROJECT-05
 
 In this project, we perform a comprehensive **analysis** of **socioeconomic** data to gain deeper insights into the **business environment**. We investigate regional, city-level, and national differences, assessing how various **indicators** influence **customer purchasing decisions** and how shifts in the **scenario** may affect **corporate strategies**. Leveraging **exploratory analysis** on real, **publicly available** data, we address **data cleaning** challenges to ensure high-quality outcomes and adopt a strategy of reorganizing data perspectives for more meaningful insights. Finally, we answer five **business** questions through relevant **graphs** and **statistics**. Before addressing these questions, we must understand what each **dataset variable** represents. We then load the data, identify issues, **clean** and **transform** it, and conclude by providing answers through **graphs** and **statistics**.
  
