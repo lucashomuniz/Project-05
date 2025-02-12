@@ -16,7 +16,7 @@ O projeto iniciou com a **ingestão de dados brutos** de um repositório no GitH
 
 A **transformação e limpeza dos dados** foi conduzida no **Azure Databricks**, onde foram aplicadas correções para padronizar e otimizar as bases. As tabelas **"Athletes"** e **"Coaches"** tiveram seus nomes formatados para um padrão único, enquanto a base **"Teams"** passou por ajustes, incluindo a **remoção da coluna "TeamName"**, que apresentava dados redundantes em relação à coluna **"Country"**. As bases **"Gender"** e **"Medals"** não necessitaram modificações, pois estavam consistentes.  
 
-![Screenshot 2025-02-12 at 20 57 54](https://github.com/user-attachments/assets/4f80067f-a02b-46e3-b0d0-9356d63abaca)
+![Screenshot 2025-02-12 at 20 57 54](https://github.com/user-attachments/assets/7959cdc8-0de9-4d5e-87dc-91614dd7dc2a)
 
 Com os dados devidamente estruturados, o **Azure Synapse Analytics** foi utilizado para realizar **consultas SQL exploratórias**, permitindo a análise aprofundada dos dados transformados. Esse processo possibilitou a identificação de **padrões e insights estratégicos** sobre os esportes olímpicos, fornecendo informações detalhadas sobre a distribuição de atletas, desempenho por país e relações entre equipes e conquistas de medalhas.
 
