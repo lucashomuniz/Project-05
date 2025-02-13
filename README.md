@@ -28,6 +28,8 @@ A relação entre equipes e medalhas apresentou uma correlação de **0.88**, co
 
 A análise de gênero mostrou uma participação equilibrada, com **5.432 mulheres (48%)** e **5.884 homens (52%)**. Algumas modalidades, como **3x3 Basketball e Tiro com Arco**, apresentam equidade perfeita, enquanto outras, como **Natação Artística**, são exclusivamente femininas, demonstrando a necessidade de políticas mais inclusivas.  
 
+![Screenshot 2025-02-12 at 21 03 20](https://github.com/user-attachments/assets/bfdcce22-64cf-4d96-8e15-9034ec29dd5f)
+
 A correlação de **0.69** entre técnicos e medalhas indica que, embora um maior número de treinadores esteja associado a melhores desempenhos, outros fatores, como infraestrutura esportiva e talento individual, são igualmente importantes. Um país com **35 técnicos conquistou 58 medalhas**, enquanto outro, sem técnicos registrados, obteve **2 medalhas**, reforçando que a especialização pode compensar a menor quantidade de treinadores.  
 
 O projeto demonstrou como a **engenharia de dados no Azure** pode fornecer insights valiosos para o esporte, auxiliando na tomada de decisões estratégicas e no aprimoramento do desempenho das delegações. Além da análise tabular, o Synapse permitiu a visualização gráfica dos dados, facilitando sua interpretação. Embora todo o processo pudesse ter sido realizado exclusivamente no **Synapse Analytics**, a proposta foi integrar diferentes frameworks do **Azure Cloud**, demonstrando um pipeline de ETL completo e escalável.
