@@ -15,7 +15,7 @@ Keywords: Olympic Gamges, Data Analysis, Data Engineering, ETL/ELT, Azure, Data 
 
 The project began with the **ingestion of raw data** from a GitHub repository, using **Azure Data Factory** to develop a **structured ETL pipeline** with two layers: **"raw_data"**, where data was stored without modifications, and **"transformed_data"**, which contains processed and analysis-ready data. Storage was handled using **Azure Data Lake Storage Gen2**, ensuring scalability and security. 
 
-<img width="974" alt="Screenshot 2025-03-13 at 11 22 23" src="https://github.com/user-attachments/assets/5f5ebff4-c281-4573-9ed3-370144a3a099" />
+<img width="1187" alt="Screenshot 2025-03-13 at 11 27 25" src="https://github.com/user-attachments/assets/a70484c6-782f-4a26-a541-c9330a476e7b" />
 
 The **data transformation and cleaning** process was conducted in **Azure Databricks**, where corrections were applied to standardize and optimize the datasets. The **"Athletes"** and **"Coaches"** tables had their names formatted to a consistent standard, while the **"Teams"** dataset underwent adjustments, including the **removal of the "TeamName" column**, which contained redundant data compared to the **"Country"** column. The **"Gender"** and **"Medals"** datasets required no modifications, as they were already consistent.
 
