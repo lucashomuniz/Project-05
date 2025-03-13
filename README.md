@@ -6,18 +6,18 @@ Additionally, **orchestration and automation** techniques are implemented, ensur
 
 This project serves as a practical and structured guide for professionals interested in developing complete data engineering solutions on **Azure**, covering everything from extraction to advanced data analysis, with a focus on scalability, efficiency, and security.
 
+![archtecture_project_14](https://github.com/user-attachments/assets/d4390eff-dde7-4d51-84f9-154b9006010e)
+
 Keywords: Olympic Gamges, Data Analysis, Data Engineering, ETL/ELT, Azure, Data Lake, Databricks, Synapse Analytics, SQL, Pyspark.
 
 
 # ✅ PROCESS
 
-The project began with the **ingestion of raw data** from a GitHub repository, using **Azure Data Factory** to develop a **structured ETL pipeline** with two layers: **"raw_data"**, where data was stored without modifications, and **"transformed_data"**, which contains processed and analysis-ready data. Storage was handled using **Azure Data Lake Storage Gen2**, ensuring scalability and security.  
+The project began with the **ingestion of raw data** from a GitHub repository, using **Azure Data Factory** to develop a **structured ETL pipeline** with two layers: **"raw_data"**, where data was stored without modifications, and **"transformed_data"**, which contains processed and analysis-ready data. Storage was handled using **Azure Data Lake Storage Gen2**, ensuring scalability and security. 
 
-![archtecture_project_14](https://github.com/user-attachments/assets/d4390eff-dde7-4d51-84f9-154b9006010e)
+<img width="974" alt="Screenshot 2025-03-13 at 11 22 23" src="https://github.com/user-attachments/assets/5f5ebff4-c281-4573-9ed3-370144a3a099" />
 
 The **data transformation and cleaning** process was conducted in **Azure Databricks**, where corrections were applied to standardize and optimize the datasets. The **"Athletes"** and **"Coaches"** tables had their names formatted to a consistent standard, while the **"Teams"** dataset underwent adjustments, including the **removal of the "TeamName" column**, which contained redundant data compared to the **"Country"** column. The **"Gender"** and **"Medals"** datasets required no modifications, as they were already consistent.
-
-![Screenshot 2025-02-12 at 20 57 54](https://github.com/user-attachments/assets/7959cdc8-0de9-4d5e-87dc-91614dd7dc2a)
 
 With the data properly structured, **Azure Synapse Analytics** was used to perform **exploratory SQL queries**, enabling an in-depth analysis of the transformed data. This process allowed the identification of **patterns and strategic insights** into Olympic sports, providing detailed information on athlete distribution, country performance, and the relationships between teams and medal achievements.
 
