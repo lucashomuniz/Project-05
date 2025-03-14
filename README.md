@@ -17,23 +17,17 @@ The project began with the **ingestion of raw data** from a GitHub repository, u
 
 ![Screen Recording 2025-03-13 at 21 02 59](https://github.com/user-attachments/assets/09595f9f-a731-4d4d-91dd-b16d5206a90c)
 
-The **data transformation and cleaning** process was conducted in **Azure Databricks**, where corrections were applied to standardize and optimize the datasets. The **"Athletes"** and **"Coaches"** tables had their names formatted to a consistent standard, while the **"Teams"** dataset underwent adjustments, including the **removal of the "TeamName" column**, which contained redundant data compared to the **"Country"** column. The **"Gender"** and **"Medals"** datasets required no modifications, as they were already consistent.
+The **data transformation and cleaning** process was conducted in **Azure Databricks**, where corrections were applied to standardize and optimize the datasets. The **"Athletes"** and **"Coaches"** tables had their names formatted to a consistent standard, while the **"Teams"** dataset underwent adjustments, including the **removal of the "TeamName" column**, which contained redundant data compared to the **"Country"** column. The **"Gender"** and **"Medals"** datasets required no modifications, as they were already consistent. Com isso as tabelas transformadas foram salvas via linguagem **PySpark** no **Databricks**, em uma pasta do **Azure Data Lake Storage Gen2** chamada **"transformed_data"**, completando o ciclo entre raw data e transformeed data.
 
 ![Screen Recording 2025-03-13 at 21 07 01](https://github.com/user-attachments/assets/4ba1fbb2-af94-4c98-8dd0-335c41a3d591)
 
 With the data properly structured, **Azure Synapse Analytics** was used to perform **exploratory SQL queries**, enabling an in-depth analysis of the transformed data. This process allowed the identification of **patterns and strategic insights** into Olympic sports, providing detailed information on athlete distribution, country performance, and the relationships between teams and medal achievements.
 
+![Screen Recording 2025-03-14 at 15 08 07](https://github.com/user-attachments/assets/d963a113-4821-4b7d-9a1d-4fa3fc6d3c53)
+
 # ✅ CONCLUSION
 
-The statistical analysis in **Azure Synapse Analytics** revealed significant patterns in athlete participation, coach distribution, and the relationship between teams and medals. The **0.89 correlation** between athletes and coaches indicates that countries with large delegations tend to have more coaches, although this relationship varies depending on investment and logistics. Additionally, some countries demonstrated high technical efficiency, winning more medals with fewer coaches.  
-
-The relationship between teams and medals showed a **0.88 correlation**, confirming that countries investing in team sports increase their chances of success. One country with **48 teams** won **58 medals**, whereas a country without teams earned only **3 medals** in individual sports, highlighting the impact of collective participation.  
-
-The gender analysis showed a balanced participation, with **5,432 women (48%)** and **5,884 men (52%)**. Some sports, such as **3x3 Basketball and Archery**, exhibit perfect gender equity, while others, like **Artistic Swimming**, are exclusively female, demonstrating the need for more inclusive policies.
-
-![Screenshot 2025-02-12 at 21 03 20](https://github.com/user-attachments/assets/bfdcce22-64cf-4d96-8e15-9034ec29dd5f)
-
-The **0.69 correlation** between coaches and medals indicates that while a higher number of coaches is associated with better performance, other factors such as sports infrastructure and individual talent are equally important. One country with **35 coaches won 58 medals**, whereas another, with no registered coaches, earned **2 medals**, reinforcing that specialization can compensate for a lower number of trainers.  
+The statistical analysis in **Azure Synapse Analytics** revealed significant patterns in athlete participation, coach distribution, and the relationship between medals, atlhetes, teams, coaches and gender. At first, the gender analysis showed a balanced participation, with **5,432 women (48%)** and **5,884 men (52%)**. Some sports, such as **3x3 Basketball and Archery**, exhibit perfect gender equity, while others, like **Artistic Swimming**, are exclusively female, demonstrating the need for more inclusive policies.
 
 This project demonstrated how **data engineering on Azure** can provide valuable insights for sports, aiding in strategic decision-making and improving delegation performance. In addition to tabular analysis, Synapse enabled graphical visualization of the data, facilitating interpretation. Although the entire process could have been conducted exclusively in **Synapse Analytics**, the goal was to integrate different **Azure Cloud** frameworks, showcasing a complete and scalable **ETL pipeline**.
 
