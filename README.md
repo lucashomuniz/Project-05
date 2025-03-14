@@ -19,7 +19,7 @@ The project began with the **ingestion of raw data** from a GitHub repository, u
 
 The **data transformation and cleaning** process was conducted in **Azure Databricks**, where corrections were applied to standardize and optimize the datasets. The **"Athletes"** and **"Coaches"** tables had their names formatted to a consistent standard, while the **"Teams"** dataset underwent adjustments, including the **removal of the "TeamName" column**, which contained redundant data compared to the **"Country"** column. The **"Gender"** and **"Medals"** datasets required no modifications, as they were already consistent.
 
-![Screen Recording 2025-03-13 at 21 04 14](https://github.com/user-attachments/assets/5ccc21a6-d17f-4081-8ae6-9bd11fe2461d)
+![Screen Recording 2025-03-13 at 21 07 01](https://github.com/user-attachments/assets/4ba1fbb2-af94-4c98-8dd0-335c41a3d591)
 
 With the data properly structured, **Azure Synapse Analytics** was used to perform **exploratory SQL queries**, enabling an in-depth analysis of the transformed data. This process allowed the identification of **patterns and strategic insights** into Olympic sports, providing detailed information on athlete distribution, country performance, and the relationships between teams and medal achievements.
 
