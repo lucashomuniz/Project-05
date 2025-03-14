@@ -15,9 +15,11 @@ Keywords: Olympic Gamges, Data Analysis, Data Engineering, ETL/ELT, Azure, Data 
 
 The project began with the **ingestion of raw data** from a GitHub repository, using **Azure Data Factory** to develop a **structured ETL pipeline** with two layers: **"raw_data"**, where data was stored without modifications, and **"transformed_data"**, which contains processed and analysis-ready data. Storage was handled using **Azure Data Lake Storage Gen2**, ensuring scalability and security. 
 
-<img width="1187" alt="Screenshot 2025-03-13 at 11 27 25" src="https://github.com/user-attachments/assets/a70484c6-782f-4a26-a541-c9330a476e7b" />
+![Screen Recording 2025-03-13 at 21 02 59](https://github.com/user-attachments/assets/09595f9f-a731-4d4d-91dd-b16d5206a90c)
 
 The **data transformation and cleaning** process was conducted in **Azure Databricks**, where corrections were applied to standardize and optimize the datasets. The **"Athletes"** and **"Coaches"** tables had their names formatted to a consistent standard, while the **"Teams"** dataset underwent adjustments, including the **removal of the "TeamName" column**, which contained redundant data compared to the **"Country"** column. The **"Gender"** and **"Medals"** datasets required no modifications, as they were already consistent.
+
+![Screen Recording 2025-03-13 at 21 04 14](https://github.com/user-attachments/assets/5ccc21a6-d17f-4081-8ae6-9bd11fe2461d)
 
 With the data properly structured, **Azure Synapse Analytics** was used to perform **exploratory SQL queries**, enabling an in-depth analysis of the transformed data. This process allowed the identification of **patterns and strategic insights** into Olympic sports, providing detailed information on athlete distribution, country performance, and the relationships between teams and medal achievements.
 
