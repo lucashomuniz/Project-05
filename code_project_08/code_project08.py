@@ -1,15 +1,15 @@
 
-# PARAMETERS 1
+# LIBRARIES
 
 from pyspark.sql.functions import col
 from pyspark.sql.types import IntegerType, DoubleType, BooleanType, DateType
 
 #################################################################################
 
-# PARAMETERS 2
+# PARAMETERS 1
 
 # Unmount the directory if it is already mounted
-dbutils.fs.unmount("/mnt/project14")
+dbutils.fs.unmount("/mnt/project08")
 
 # Define the configurations
 configs = {
@@ -23,24 +23,26 @@ configs = {
 # Mount the directory
 dbutils.fs.mount(
     source="abfss://?@?.dfs.core.windows.net", 
-    mount_point="/mnt/project14",
+    mount_point="/mnt/project08",
     extra_configs=configs
 )
 
 #################################################################################
 
-#%fs
-#ls "/mnt/project14"
+# PARAMETERS 2
+
+%fs
+ls "/mnt/project08"
 
 #################################################################################
 
 # PARAMETERS 3
 
-athletes = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project14/raw_data/athletes.csv")
-coaches = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project14/raw_data/coaches.csv")
-gender = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project14/raw_data/gender.csv")
-medals = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project14/raw_data/medals.csv")
-teams = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project14/raw_data/teams.csv")
+athletes = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project08/raw-data/atlhetes.csv")
+coaches = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project08/raw-data/coaches.csv")
+gender = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project08/raw-data/gender.csv")
+medals = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project08/raw-data/medals.csv")
+teams = spark.read.format("csv").option("header","true").option("inferSchema","true").load("dbfs:/mnt/project08/raw-data/teams.csv")
 
 #################################################################################
 
@@ -65,7 +67,7 @@ athletes_transformed = athletes_transformed.drop("name_parts")
 athletes_transformed = athletes_transformed.toPandas()
 
 # Salvar dataframe no Data Lake Gen 2
-athletes_transformed.to_csv("/dbfs/mnt/project14/trans_data/athletes.csv", index=False)
+athletes_transformed.to_csv("/dbfs/mnt/project08/trans-data/athletes.csv", index=False)
 
 # Mostrar o dataframe
 display(athletes_transformed)
@@ -93,7 +95,7 @@ coaches_transformed = coaches_transformed.drop("name_parts")
 coaches_transformed = coaches_transformed.toPandas()
 
 # Salvar dataframe no Data Lake Gen 2
-coaches_transformed.to_csv("/dbfs/mnt/project14/trans_data/coaches.csv", index=False)
+coaches_transformed.to_csv("/dbfs/mnt/project08/trans-data/coaches.csv", index=False)
 
 # Mostrar o dataframe
 display(coaches_transformed)
@@ -109,7 +111,7 @@ from pyspark.sql.window import Window
 gender_transformed = gender.toPandas()
 
 # Salvar dataframe no Data Lake Gen 2
-gender_transformed.to_csv("/dbfs/mnt/project14/trans_data/gender.csv", index=False)
+gender_transformed.to_csv("/dbfs/mnt/project08/trans-data/gender.csv", index=False)
 
 # Mostrar o dataframe
 display(gender_transformed)
@@ -125,7 +127,7 @@ teams_transformed = teams.drop("TeamName")
 teams_transformed = teams_transformed.toPandas()
 
 # Salvar dataframe no Data Lake Gen 2
-teams_transformed.to_csv("/dbfs/mnt/project14/trans_data/teams.csv", index=False)
+teams_transformed.to_csv("/dbfs/mnt/project08/trans-data/teams.csv", index=False)
 
 # Mostrar o dataframe
 display(teams_transformed)
@@ -141,9 +143,10 @@ from pyspark.sql.functions import col, rank
 medals_transformed = medals.toPandas()
 
 # Salvar dataframe no Data Lake Gen 2
-medals_transformed.to_csv("/dbfs/mnt/project14/trans_data/medals.csv", index=False)
+medals_transformed.to_csv("/dbfs/mnt/project08/trans-data/medals.csv", index=False)
 
 # Mostrar o dataframe
 display(medals_transformed)
 
+#################################################################################
 
