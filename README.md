@@ -21,7 +21,9 @@ The **data transformation and cleaning** process was conducted in **Azure Databr
 
 ![Screen Recording 2025-03-13 at 21 07 01](https://github.com/user-attachments/assets/4ba1fbb2-af94-4c98-8dd0-335c41a3d591)
 
-With the data properly structured, **Azure Synapse Analytics** was used to perform **exploratory SQL queries**, enabling an in-depth analysis of the transformed data. This process allowed the identification of **patterns and strategic insights** into Olympic sports, providing detailed information on athlete distribution, country performance, and the relationships between teams and medal achievements.
+With the data properly structured, **Azure Synapse Analytics** was used to perform **exploratory SQL queries**, enabling a deep analysis of the transformed dataset. This process revealed **patterns and strategic insights** into Olympic sports, including athlete distribution, country performance, and the relationships between teams, coaches, and medal achievements. By leveraging **SQL-based analytics**, it was possible to uncover trends such as the correlation between delegation size and medal count, variations in gender representation across sports, and the potential impact of coaching staff on performance.  
+
+Beyond validating existing assumptions about Olympic success factors, the analysis also highlighted **new hypotheses** for further exploration, such as the influence of sports infrastructure and investment on medal counts. The scalability and performance of **Synapse Analytics** allowed for rapid data exploration, ensuring that insights were both actionable and valuable for guiding strategic decisions in sports management and policy-making.
 
 ![Screen Recording 2025-03-14 at 15 08 07](https://github.com/user-attachments/assets/d963a113-4821-4b7d-9a1d-4fa3fc6d3c53)
 
