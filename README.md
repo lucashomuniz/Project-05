@@ -8,6 +8,8 @@ This project serves as a practical and structured guide for professionals intere
 
 ![archtecture_project_14](https://github.com/user-attachments/assets/d4390eff-dde7-4d51-84f9-154b9006010e)
 
+![412657060-d4390eff-dde7-4d51-84f9-154b9006010e](https://github.com/user-attachments/assets/2f58a389-dbd4-40dc-8bf6-ed8ec46ef84c)
+
 Keywords: Olympic Gamges, Data Analysis, Data Engineering, ETL/ELT, Azure, Data Lake, Databricks, Synapse Analytics, SQL, Pyspark.
 
 
