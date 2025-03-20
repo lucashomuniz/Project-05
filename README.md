@@ -44,3 +44,6 @@ The third analysis, which examines the 15 countries with the highest number of c
 
 This project demonstrated how **data engineering on Azure** can provide valuable insights for sports, aiding in strategic decision-making and improving delegation performance. In addition to tabular analysis, Synapse enabled graphical visualization of the data, facilitating interpretation. Although the entire process could have been conducted exclusively in **Synapse Analytics**, the goal was to integrate different **Azure Cloud** frameworks, showcasing a complete and scalable **ETL pipeline**.
 
+![Screen Recording 2025-03-19 at 21 17 14](https://github.com/user-attachments/assets/d1f6534c-fcf8-4911-8b61-ddd2430b6246)
+
+**Dashboard:** https://app.powerbi.com/view?r=eyJrIjoiMTY5YTY0ZDUtMjcxYy00ZmQzLTk5MzQtYThjZTY5M2Y3YWZhIiwidCI6ImQ2OWE3NzgzLWU5MzctNDIzMi1iYTg1LTIwOTg0MDgzODJjOCJ9
