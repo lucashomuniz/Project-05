@@ -46,4 +46,4 @@ This project demonstrated how **data engineering on Azure** can provide valuable
 
 ![Screen Recording 2025-03-19 at 21 17 14](https://github.com/user-attachments/assets/d1f6534c-fcf8-4911-8b61-ddd2430b6246)
 
-**Dashboard:** https://app.powerbi.com/view?r=eyJrIjoiMTY5YTY0ZDUtMjcxYy00ZmQzLTk5MzQtYThjZTY5M2Y3YWZhIiwidCI6ImQ2OWE3NzgzLWU5MzctNDIzMi1iYTg1LTIwOTg0MDgzODJjOCJ9
+**Dashboard:** https://app.powerbi.com/reportEmbed?reportId=3f892768-6f9b-4404-95d8-58fb4bf272f9&autoAuth=true&ctid=ed8112cd-3759-41ec-b020-5d090181c999
